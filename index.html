@@ -8,12 +8,20 @@
 </head>
 <body>
     <div class="phone-container">
-        <div class="phone-screen">
+        <div class="phone-screen" id="phone-screen">
+            <div class="splash-screen" id="splash-screen">
+                <h1>Hello, APhone!</h1>
+            </div>
             <div class="home-screen">
                 <h1>APhone</h1>
                 <div class="app" id="math-solver">Math Solver</div>
                 <div class="app" id="abrowse">ABrowse</div>
+                <div class="app" id="dailymotion">Dailymotion</div>
+                <div class="app" id="settings">Settings</div>
+                <div class="app" id="help">Help</div>
+                <div class="app" id="notepad">Notepad</div>
             </div>
+            <!-- Math Solver App -->
             <div class="app-screen" id="math-solver-screen">
                 <h2>Math Solver</h2>
                 <input type="text" id="math-input" placeholder="Enter equation, e.g., 2+2">
@@ -21,12 +29,38 @@
                 <p id="result"></p>
                 <button class="back-btn" onclick="goHome()">Back</button>
             </div>
+            <!-- ABrowse App -->
             <div class="app-screen" id="abrowse-screen">
                 <h2>ABrowse</h2>
                 <iframe src="https://www.bing.com" frameborder="0"></iframe>
                 <button class="back-btn" onclick="goHome()">Back</button>
             </div>
+            <!-- Dailymotion App -->
+            <div class="app-screen" id="dailymotion-screen">
+                <h2>Dailymotion</h2>
+                <iframe src="https://www.dailymotion.com" frameborder="0"></iframe>
+                <button class="back-btn" onclick="goHome()">Back</button>
+            </div>
+            <!-- Settings App -->
+            <div class="app-screen" id="settings-screen">
+                <h2>Settings</h2>
+                <p>Settings app content will be added here.</p>
+                <button class="back-btn" onclick="goHome()">Back</button>
+            </div>
+            <!-- Help App -->
+            <div class="app-screen" id="help-screen">
+                <h2>Help</h2>
+                <p>Help app content will be added here.</p>
+                <button class="back-btn" onclick="goHome()">Back</button>
+            </div>
+            <!-- Notepad App -->
+            <div class="app-screen" id="notepad-screen">
+                <h2>Notepad</h2>
+                <textarea id="notepad-textarea" placeholder="Write your notes here..."></textarea>
+                <button class="back-btn" onclick="goHome()">Back</button>
+            </div>
         </div>
+        <button id="power-button" onclick="turnOnPhone()">Power</button>
     </div>
     <script src="script.js"></script>
 </body>
